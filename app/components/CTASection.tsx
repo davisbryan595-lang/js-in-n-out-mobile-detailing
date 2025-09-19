@@ -9,7 +9,7 @@ export default function CTASection() {
             <h3 className="text-xl font-semibold">Ready for a Spotless Ride?</h3>
             <p className="mt-1 text-sm text-white/70">Book your mobile detail today. We’ll come to you!</p>
           </div>
-          <Link href="/contact" className="btn-primary">Book Now</Link>
+          <a href="#contact" className="btn-primary">Book Now</a>
         </div>
       </div>
     </section>

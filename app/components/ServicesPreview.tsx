@@ -43,7 +43,7 @@ export default function ServicesPreview() {
             <h2 className="section-title">Our Services</h2>
             <p className="section-subtitle">Professional packages tailored to your needs and schedule.</p>
           </div>
-          <Link href="/services" className="hidden sm:inline btn-secondary">View All</Link>
+          <a href="#contact" className="hidden sm:inline btn-secondary">Get a Quote</a>
         </div>
         <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.slice(0, 3).map((s) => (

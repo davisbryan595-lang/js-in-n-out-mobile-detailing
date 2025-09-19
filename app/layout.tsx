@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Link from "next/link";
 import "./globals.css";
+import Navbar from "./components/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,26 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}>
-        <header className="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur">
-          <Container>
-            <nav className="flex items-center justify-between py-4" aria-label="Primary">
-              <Link href="/" className="flex items-center gap-3">
-                <img src="https://cdn.builder.io/api/v1/image/assets%2F5c758e804cba4fa3a488e9088887877b%2F1d8d5acbe3294840a9d4d470b6f97d73?format=webp&width=800" alt="J's In and Out logo" className="h-9 w-9 rounded-full object-cover" />
-                <span className="text-lg font-semibold tracking-tight">J’s In and Out</span>
-              </Link>
-              <div className="hidden md:flex items-center gap-8">
-                <Link href="/" className="nav-link">Home</Link>
-                <Link href="/about" className="nav-link">About</Link>
-                <Link href="/services" className="nav-link">Services</Link>
-                <Link href="/contact" className="nav-link">Contact</Link>
-              </div>
-              <div className="flex items-center gap-3">
-                <a href="tel:13138157810" className="hidden sm:inline text-sm text-white/80 hover:text-white">(313) 815-7810</a>
-                <Link href="/contact" className="btn-primary">Book Now</Link>
-              </div>
-            </nav>
-          </Container>
-        </header>
+        <Navbar />
         <main>{children}</main>
         <footer className="mt-24 border-t border-white/10 bg-black">
           <Container>

@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 type Service = {
   title: string;
   desc: string;
@@ -36,32 +34,32 @@ const services: Service[] = [
 
 export default function ServicesPreview() {
   return (
-    <section id="services" className="py-16 sm:py-20">
+    <section id="services" className="scroll-mt-24 py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-end justify-between gap-6">
           <div>
             <h2 className="section-title">Our Services</h2>
             <p className="section-subtitle">Professional packages tailored to your needs and schedule.</p>
           </div>
-          <Link href="/services" className="hidden sm:inline btn-secondary">View All</Link>
+          <a href="#contact" className="hidden sm:inline btn-secondary">Get a Quote</a>
         </div>
         <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.slice(0, 3).map((s) => (
-            <article key={s.title} className="card overflow-hidden">
+            <article key={s.title} className="card overflow-hidden transition-transform hover:-translate-y-0.5">
               <div className={`${s.imageClass} h-44 w-full`} />
               <div className="p-5">
                 <h3 className="font-semibold">{s.title}</h3>
                 <p className="mt-1 text-sm text-white/70">{s.desc}</p>
                 <div className="mt-4 flex items-center gap-3">
-                  <Link href="/contact" className="btn-primary">Book Now</Link>
-                  <Link href="/services" className="text-sm text-white/80 hover:text-white">Learn more</Link>
+                  <a href="#contact" className="btn-primary">Book Now</a>
+                  <a href="#services" className="text-sm text-white/80 hover:text-white">Learn more</a>
                 </div>
               </div>
             </article>
           ))}
         </div>
         <div className="mt-6 sm:hidden">
-          <Link href="/services" className="btn-secondary w-full justify-center">View All Services</Link>
+          <a href="#services" className="btn-secondary w-full justify-center">View All Services</a>
         </div>
       </div>
     </section>

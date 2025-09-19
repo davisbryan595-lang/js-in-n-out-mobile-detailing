@@ -1,3 +1,14 @@
+export async function OPTIONS() {
+  return new Response(null, {
+    status: 204,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "POST, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type",
+    },
+  });
+}
+
 export async function POST(req: Request) {
   try {
     const contentType = req.headers.get("content-type") || "";
@@ -20,12 +31,18 @@ export async function POST(req: Request) {
 
     return new Response(JSON.stringify({ ok: true }), {
       status: 200,
-      headers: { "content-type": "application/json" },
+      headers: {
+        "content-type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+      },
     });
   } catch (e) {
     return new Response(JSON.stringify({ ok: false }), {
       status: 500,
-      headers: { "content-type": "application/json" },
+      headers: {
+        "content-type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+      },
     });
   }
 }

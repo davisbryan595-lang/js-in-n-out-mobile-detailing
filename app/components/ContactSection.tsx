@@ -1,7 +1,7 @@
 "use client";
 import { FormEvent, useState } from "react";
 
-export default function ContactPage() {
+export default function ContactSection() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
@@ -21,10 +21,10 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="py-16 sm:py-20">
+    <section id="contact" className="scroll-mt-24 py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <header className="max-w-2xl">
-          <h1 className="section-title">Contact Us</h1>
+          <h2 className="section-title">Contact Us</h2>
           <p className="section-subtitle">Have a question or ready to book? Send a message and we’ll get back to you shortly.</p>
         </header>
 
@@ -59,7 +59,7 @@ export default function ContactPage() {
 
           <aside className="space-y-6">
             <div className="card p-6">
-              <h2 className="font-semibold">Contact Info</h2>
+              <h3 className="font-semibold">Contact Info</h3>
               <ul className="mt-3 space-y-2 text-sm">
                 <li><span className="text-white/60">Email:</span> <a className="hover:text-brand" href="mailto:jackbovia5@gmail.com">jackbovia5@gmail.com</a></li>
                 <li><span className="text-white/60">Phone:</span> <a className="hover:text-brand" href="tel:13138157810">(313) 815-7810</a></li>
@@ -75,7 +75,7 @@ export default function ContactPage() {
               />
             </div>
             <div className="card p-6">
-              <h2 className="font-semibold">Follow Us</h2>
+              <h3 className="font-semibold">Follow Us</h3>
               <div className="mt-3 flex items-center gap-3">
                 <a href="#" className="social-icon" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5" aria-hidden><path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.2l-.3 3h-1.9v7A10 10 0 0 0 22 12"/></svg></a>
                 <a href="#" className="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5" aria-hidden><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5m10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3m-5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10m6.5-.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/></svg></a>
@@ -85,6 +85,6 @@ export default function ContactPage() {
           </aside>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

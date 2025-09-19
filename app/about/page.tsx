@@ -19,9 +19,9 @@ export default function AboutPage() {
             <h3 className="mt-8 font-semibold">Mission Statement</h3>
             <p className="mt-2 text-white/80">To bring convenience and quality to every vehicle we touch.</p>
             <ul className="mt-6 space-y-3 text-sm">
-              <li className="flex items-start gap-3"><span className="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-brand/20 text-brand">✓</span><span>Mobile service across Downriver, Michigan</span></li>
-              <li className="flex items-start gap-3"><span className="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-brand/20 text-brand">✓</span><span>Flexible scheduling that fits your life</span></li>
-              <li className="flex items-start gap-3"><span className="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-brand/20 text-brand">✓</span><span>Professional products and processes</span></li>
+              <li className="flex items-start gap-3"><span className="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full brand-badge">✓</span><span>Mobile service across Downriver, Michigan</span></li>
+              <li className="flex items-start gap-3"><span className="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full brand-badge">✓</span><span>Flexible scheduling that fits your life</span></li>
+              <li className="flex items-start gap-3"><span className="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full brand-badge">✓</span><span>Professional products and processes</span></li>
             </ul>
             <div className="mt-8"><Link href="/contact" className="btn-primary">Book Now</Link></div>
           </div>

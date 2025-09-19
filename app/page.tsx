@@ -1,8 +1,10 @@
-import Hero from "./components/Hero";
+import dynamic from "next/dynamic";
 import WhyChoose from "./components/WhyChoose";
 import ServicesPreview from "./components/ServicesPreview";
-import Testimonials from "./components/Testimonials";
 import CTASection from "./components/CTASection";
+
+const Hero = dynamic(() => import("./components/Hero"), { ssr: false });
+const Testimonials = dynamic(() => import("./components/Testimonials"), { ssr: false });
 
 export default function Home() {
   return (

@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "J’s In and Out Mobile Detailing | Professional Mobile Detailing in Downriver, MI",
+  title: "J��s In and Out Mobile Detailing | Professional Mobile Detailing in Downriver, MI",
   description:
     "We bring premium mobile car detailing to your doorstep across the Downriver area. Flexible scheduling, professional results. Call 313-815-7810.",
   metadataBase: new URL("https://js-in-n-out-mobile-detailing.vercel.app"),
@@ -42,7 +42,7 @@ export default function RootLayout({
           <Container>
             <nav className="flex items-center justify-between py-4" aria-label="Primary">
               <Link href="/" className="flex items-center gap-3">
-                <span className="inline-block h-9 w-9 rounded-full bg-brand" aria-hidden />
+                <img src="https://cdn.builder.io/api/v1/image/assets%2F5c758e804cba4fa3a488e9088887877b%2F1d8d5acbe3294840a9d4d470b6f97d73?format=webp&width=800" alt="J's In and Out logo" className="h-9 w-9 rounded-full object-cover" />
                 <span className="text-lg font-semibold tracking-tight">J’s In and Out</span>
               </Link>
               <div className="hidden md:flex items-center gap-8">

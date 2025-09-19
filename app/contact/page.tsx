@@ -32,19 +32,19 @@ export default function ContactPage() {
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <div>
                 <label className="text-xs text-white/70" htmlFor="name">Name</label>
-                <input id="name" name="name" required className="mt-1 w-full rounded-lg border border-white/10 bg-transparent px-3 py-2 text-sm outline-none focus:border-brand" />
+                <input id="name" name="name" required className="mt-1 w-full rounded-lg border border-white/10 bg-transparent px-3 py-2 text-sm outline-none focus-border" />
               </div>
               <div>
                 <label className="text-xs text-white/70" htmlFor="email">Email</label>
-                <input id="email" name="email" type="email" required className="mt-1 w-full rounded-lg border border-white/10 bg-transparent px-3 py-2 text-sm outline-none focus:border-brand" />
+                <input id="email" name="email" type="email" required className="mt-1 w-full rounded-lg border border-white/10 bg-transparent px-3 py-2 text-sm outline-none focus-border" />
               </div>
               <div>
                 <label className="text-xs text-white/70" htmlFor="phone">Phone</label>
-                <input id="phone" name="phone" required className="mt-1 w-full rounded-lg border border-white/10 bg-transparent px-3 py-2 text-sm outline-none focus:border-brand" />
+                <input id="phone" name="phone" required className="mt-1 w-full rounded-lg border border-white/10 bg-transparent px-3 py-2 text-sm outline-none focus-border" />
               </div>
               <div className="sm:col-span-2">
                 <label className="text-xs text-white/70" htmlFor="message">Message</label>
-                <textarea id="message" name="message" rows={5} required className="mt-1 w-full rounded-lg border border-white/10 bg-transparent px-3 py-2 text-sm outline-none focus:border-brand" />
+                <textarea id="message" name="message" rows={5} required className="mt-1 w-full rounded-lg border border-white/10 bg-transparent px-3 py-2 text-sm outline-none focus-border" />
               </div>
             </div>
             <div className="mt-6 flex items-center gap-4">

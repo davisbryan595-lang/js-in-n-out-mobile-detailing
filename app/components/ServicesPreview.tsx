@@ -36,7 +36,7 @@ const services: Service[] = [
 
 export default function ServicesPreview() {
   return (
-    <section id="services" className="py-16 sm:py-20">
+    <section id="services" className="scroll-mt-24 py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-end justify-between gap-6">
           <div>

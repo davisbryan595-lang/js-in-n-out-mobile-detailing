@@ -53,15 +53,15 @@ export default function ServicesPreview() {
                 <h3 className="font-semibold">{s.title}</h3>
                 <p className="mt-1 text-sm text-white/70">{s.desc}</p>
                 <div className="mt-4 flex items-center gap-3">
-                  <Link href="/contact" className="btn-primary">Book Now</Link>
-                  <Link href="/services" className="text-sm text-white/80 hover:text-white">Learn more</Link>
+                  <a href="#contact" className="btn-primary">Book Now</a>
+                  <a href="#services" className="text-sm text-white/80 hover:text-white">Learn more</a>
                 </div>
               </div>
             </article>
           ))}
         </div>
         <div className="mt-6 sm:hidden">
-          <Link href="/services" className="btn-secondary w-full justify-center">View All Services</Link>
+          <a href="#services" className="btn-secondary w-full justify-center">View All Services</a>
         </div>
       </div>
     </section>

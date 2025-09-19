@@ -10,7 +10,8 @@ export default function ContactSection() {
     const formData = new FormData(form);
     setStatus("loading");
     try {
-      const res = await fetch("/api/contact", { method: "POST", body: formData });
+      const url = `${window.location.origin}/api/contact`;
+      const res = await fetch(url, { method: "POST", body: formData });
       if (!res.ok) throw new Error("Request failed");
       setStatus("success");
       form.reset();

@@ -47,7 +47,7 @@ export default function ServicesPreview() {
         </div>
         <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.slice(0, 3).map((s) => (
-            <article key={s.title} className="card overflow-hidden">
+            <article key={s.title} className="card overflow-hidden transition-transform hover:-translate-y-0.5">
               <div className={`${s.imageClass} h-44 w-full`} />
               <div className="p-5">
                 <h3 className="font-semibold">{s.title}</h3>

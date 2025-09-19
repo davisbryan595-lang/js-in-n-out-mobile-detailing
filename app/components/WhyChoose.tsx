@@ -45,7 +45,7 @@ export default function WhyChoose() {
         <p className="section-subtitle">Convenient, reliable, and meticulous mobile auto detailing you can trust.</p>
         <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {items.map((it) => (
-            <div key={it.title} className="card p-5">
+            <div key={it.title} className="card p-5 transition-transform hover:-translate-y-0.5">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10">{it.icon}</div>
               <h3 className="mt-4 font-semibold">{it.title}</h3>
               <p className="mt-1 text-sm text-white/70">{it.desc}</p>
